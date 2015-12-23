@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<upi:RespPay xmlns:upi="http://npci.org/upi/schema/">
+	<Head ver="1.0" ts="2015-02-16T22:02:48+05:30" orgId="400001"
+		msgId="NENSVVR4QOS7X1UGPY7JGUV444PL9T2C3QM" />
+	<Txn id="8ENSVVR4QOS7X1UGPY7JGUV444PL9T2C3QM" note="Restaurant Bill" refId="" refUrl="" ts="2015-02-16T22:02:35+05:30" type="PAY">
+		<RiskScores>
+			<Score provider="npci" type="TXNRISK" value="00030" />
+		</RiskScores>
+	</Txn>
+	<Resp reqMsgId="HENSVVR4QOS7X1UGPY7JGUV444PL9T2C3QM" result="SUCCESS"
+		errCode="">
+		<Ref type="PAYER" seqNum="1" addr="zeeshan.khan@hdfc" settAmount="4000"
+			settCurrency="INR" approvalNum="9399389827" respCode="00" />
+		<Ref type="PAYEE" seqNum="1" addr="9999933333" settAmount="4000"
+			settCurrency="INR" approvalNum="7786787865" respCode="00" />
+	</Resp>
+</upi:RespPay>

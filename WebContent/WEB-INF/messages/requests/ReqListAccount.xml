@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<upi:ReqListAccount xmlns:upi="http://npci.org/upi/schema/">
+	<Head ver="1.0" ts="2015-02-16T22:02:25+05:30" orgId=""
+		msgId="HENSVVR4QOS7Y1UGPY7JGUV444PL9T2C3QM" />
+	<Payer addr="Zeeshan.khan@hdfc" name="Zeeshan Khan" seqNum="1"
+		type="PERSON|ENTITY" code="4814">
+		<Link type="MOBILE" value="9876543210" />
+		<Creds>
+			<Cred type="OTP" subtype="SMS|EMAIL|HOTP|TOTP">
+				<Data> base-64 encoded/encrypted authentication data</Data>
+			</Cred>
+		</Creds>
+	</Payer>
+</upi:ReqListAccount>

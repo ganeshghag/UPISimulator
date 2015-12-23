@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<upi:RespListAccount xmlns:upi="http://npci.org/upi/schema/">
+	<Head ver="1.0" ts="2015-02-16T22:02:30+05:30" orgId="400001"
+		msgId="FENSVVR4QOS7Y1UGPY7JGUV444PL9T2C3QM" />
+	<Resp reqMsgId="HENSVVR4QOS7Y1UGPY7JGUV444PL9T2C3QM" result="SUCCESS"
+		errCode="" />
+	<AccountList>
+		<Account accRefNumber="" maskedAccNumber="" ifsc="HDFC0000101"
+			mmid="" name="Rohit Patkar" aeba="N" />
+		<Account accRefNumber="" maskedAccNumber="" ifsc="HDFC0000103"
+			mmid="" name="Rohit Patkar" aeba="Y" />
+		<Account accRefNumber="" maskedAccNumber="" ifsc="HDFC0000999"
+			mmid="" name="Ganesh Ghag" aeba="Y" />
+	</AccountList>
+</upi:RespListAccount>

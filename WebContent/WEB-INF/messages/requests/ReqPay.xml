@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<upi:ReqPay xmlns:upi="http://npci.org/upi/schema/">
+	<Head ver="1.0" ts="2015-02-16T22:02:35+05:30" orgId="400002"
+		msgId="HENSVVR4QOS7X1UGPY7JGUV444PL9T2C3QM" />
+	<Meta>
+		<Tag name="PAYREQSTART" value="2015-02-16T22:02:00+05:30" />
+		<Tag name="PAYREQEND" value="2015-02-16T22:02:35+05:30" />
+	</Meta>
+	<Txn id="8ENSVVR4QOS7X1UGPY7JGUV444PL9T2C3QM" note="Restaurant Bill "
+		refId="" refUrl="" ts="2015-02-16T22:02:35+05:30" type="PAY" orgTxnId="">
+		<RiskScores>
+			<Score provider="psp1" type="TXNRISK" value="00030" />
+		</RiskScores>
+	</Txn>
+	<Payer addr="zeeshan.khan@hdfc" name="Zeeshan Khan" seqNum="1"
+		type="PERSON" code="4814">
+		<Info>
+			<Identity type="ACCOUNT" verifiedName="Zeeshan Khan" id="7389923983430" />
+			<Rating verifiedAddress="TRUE" />
+		</Info>
+		<Device>
+			<Tag name="MOBILE" value="+91.99999.00000" />
+			<Tag name="GEOCODE" value="288177" />
+			<Tag name="LOCATION" value="Mumbai,Maharashtra" />
+			<Tag name="IP" value="124.170.23.22" />
+			<Tag name="TYPE" value="mob" />
+			<Tag name="ID" value="750c6be243f1c4b5c9912b95a5742fc5" />
+			#device advertising id
+			<Tag name="OS" value="android" />
+			<Tag name="APP" value="NPCIAPP" />
+			<Tag name="CAPABILITY" value="5200000200010004000639292929292" />
+		</Device>
+		<Ac addrType="ACCOUNT">
+			<Detail name="ACTYPE" value="SAVINGS" />
+			<Detail name="IFSC" value="HDFC0288100" />
+			<Detail name="ACNUM" value="2678892001828" />
+		</Ac>
+		<Creds>
+			<Cred type="PIN" subType="MPIN">
+				<Data code="" ki=""> base-64 encoded and encrypted</Data>
+				#data includes [base 64 encoded]
+				<!-- <Transaction Id> <delimiter> <Common library version> <delimiter> 
+					<Captured credential> <delimiter> <Transaction amount> <delimiter> <Random 
+					number>[encrypted] ,"|" to be used as delimiter -->
+			</Cred>
+		</Creds>
+		<Amount value="4000" curr="INR">
+		</Amount>
+	</Payer>
+
+
+	<Payees>
+		<Payee addr="9999933333" name="Rohit Patkar" seqNum="1" type="Person"
+			code="4814">
+			<Ac addrType="ACCOUNT">
+				<Detail name="ACTYPE" value="SAVINGS" />
+				<Detail name="IFSC" value=" HDFC0000103" />
+				<Detail name="ACNUM" value="" />
+			</Ac>
+		</Payee>
+	</Payees>
+</upi:ReqPay>		
